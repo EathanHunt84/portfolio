@@ -1,0 +1,293 @@
+/* This is a CSS comment */
+
+/* Reset some default browser styles */
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    /* background-color: #333; */
+}
+
+:root {
+    --primary-color: #0066cc;
+    --primary-dark: #0052a3;
+    --text-color: #333;
+    --background-light: #f4f4f4;
+    --card-background: #f9f9f9;
+    --border-color: #ddd;
+}
+
+/* Style the body element */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /*distace between every line no matter the section*/
+    color: #0b0709; /*text color*/
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+     /*mARGIN KO 0 SET KARNE SE poora section mid me aa */
+    padding: 0px;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    padding: 40px; /*content and element ke border ke beech me space*/
+    background-color: #201f1f;
+    border-radius: 0px;
+    /* box-shadow: -15px 15px 1px rgba(255, 2, 2, 0.1); */
+    margin-bottom: 0px; /*for gapping between this and next section*/
+    box-sizing: ;
+}
+
+/* Style all headings level 1 */
+h1 {
+    color: #3a7ab6;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+header p{
+    color: rgb(255, 255, 255);
+}
+
+/* Style sections */
+section {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    background-color: #f1f0f0;
+    border-radius: 0px; /*for curved sections*/
+    border-bottom: 2px solid #333;
+    /* box-shadow: 20px 20px 1px rgba(47, 64, 140, 0.1); */
+}
+
+#about pre{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    /* border-top: 1px solid #eee; */
+    color: white;
+    background-color: #201f1f;
+    /* font-weight: bold; */
+}
+
+#Projects {
+    list-style: disc;         /* keep the bullet */
+    padding-left: 20px; 
+    font-weight: normal;           /* space before bullet */
+    margin-top: 1px;
+    border-radius: 0px;
+    background-color: #f1f0f0;
+    color: #000000;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  
+  
+  .my_img {
+    width: 150px;          /* Set width */
+    height: 150px;         /* Set height */
+    border-radius: 50%;    /* Make it a circle */
+    object-fit: cover;     /* Crop and fill nicely */
+    display: block;        /* Optional: avoid inline spacing */
+    margin: 0 auto; 
+    border: 3px solid var(--primary-dark); 
+    box-shadow: 5px 5px 1px var(--text-color);      /* Center the image */
+  }
+
+  /* Navigation menu styles */
+nav ul {
+    list-style: none; /*to remove bullet points from the list*/
+    display: flex; /*verticle ko horizontal kar deta hai*/
+    justify-content: center; /*to place the wole content in center*/
+    gap: 10px;
+    margin-top: 1px;
+}
+
+nav a {
+    text-decoration: none; /*removes underline from nav links*/
+    color: #333;
+    font-weight: bold; /*to make text bold*/
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid #0066cc;
+}
+
+#Projects a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+#Projects a:hover{
+    color:#dce2e9;
+    border-bottom: 2px solid #dfe1e4;
+}
+
+/* Project section with flexbox */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #000000;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.project-card {
+    /* flex: 1 1 300px; grow | shrink | basis */
+    border: 1px solid black;
+    border-radius: 10%;
+    /* padding-inline: 20px; */
+    background-color: #f1f0f0;
+    /* box-shadow: 4px 4px 5px #00ffff; */
+
+}
+
+.project-card:hover{
+    background-color: #0b0709;
+    color: #0066cc;
+    transition: color 0.3s ease;
+    /* box-shadow: 4px 4px 5px #00ffff; */
+
+}
+
+.project-card h3:hover,
+.project-card p:hover{
+    color: #dce2e9;
+    transition: color 0.3s ease;
+    /* box-shadow: 4px 4px 5px #00ffff; */
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    /* padding: 4px 8px; */
+    font-weight: normal; /*not working*/
+    text-decoration: none;
+}
+
+.button:hover {
+    /* background-color: #0066cc; Blue on hover */
+    color: #664c89; /*not working*/
+    /* border-bottom: 2px solid #0066cc; not working */
+    transition: color 0.3s ease;
+}
+
+
+
+#Skills{
+    border-radius: 0px;
+    padding-bottom: 40px;
+    background-color: #f1f0f0;
+    color: #000000;
+    /* padding: 50px; */
+    padding-bottom: 70px;
+    /* background-color: #1a1a1a; */
+}
+
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card{
+   border-radius: 10%;
+   padding: 10px;
+   background-color:#f1f0f0;
+   color: #070606; 
+   /* border: 1px solid grey; */
+   /* box-shadow: 7px 7px 10px rgb(120, 10, 168); */
+}
+
+.skill-card:hover{
+    background-color: #201f1f;
+    color: #0066cc;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+    /* box-shadow: 4px 4px 5px purple; */
+
+}
+
+.skill-card p:,
+.skill-card h3{
+    display: inline-block;
+}
+
+
+.skill-card p:hover,
+.skill-card h3:hover{
+    color: #dce2e9;
+    transition: color 0.3s ease;
+}
+
+.skill-card p{
+    padding-top: 20px;
+    font-weight: normal;
+    /* border-color: rgb(170, 32, 32); */
+    /* border-width: 10px; */
+}
+
+#contact h2{
+    font-size: 36px;
+    color: #2f3f53;
+}
+
+#contact p{
+    font-weight: normal;
+    /* padding-bottom: 40px; */
+}
+
+#contact{
+    padding-bottom: 50px;
+}
+
+#Projects h2, #Skills h2, #about h2{
+    font-size: 36px;
+    color: #2f3f53;
+}
+
+.skill-card,.project-card{
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 200px;
+    /* gap: 200px; */
+}
+
+.linkedin a,.github a{
+    font-weight: bold;
+    color: #2f3f53;
+    text-decoration: none;
+}
+
+.linkedin a:hover, .github a:hover{
+    color: #3a7ab6;
+    transition: color 0.3s ease;
+}
+
+{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#Projects, #Skills, #contact, #about{
+    
+}
